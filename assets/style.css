@@ -1,0 +1,92 @@
+/* diseño del cuerpo de la carta */
+html, body {
+    background: #fafafa;
+    color: #0b0b0b;
+    font-family: sans-serif;
+    
+  }
+  
+  #page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* display: flex; */
+    /* margin: 0 auto; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  #toolbar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 15px 16px;
+    border: 1px solid black;
+    
+  }
+  
+  #actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 64px;
+  }
+  
+  #title {
+    padding: 21px;
+    position: absolute;
+    bottom: 0;
+    color: rgb(8, 8, 8);
+    font-family: 'roboto';
+  }
+  /* div de las las cartas */
+  #content {
+    position: relative;
+    margin-top: 15%;
+    padding: 24px;
+    position: fixed;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* diseño de las cartas */
+  .card {
+    
+    width:300px;
+    border: 1px solid #111213;
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px;   
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 16px;
+    padding: 24px;
+    
+  }
+  /* estilo del pagination */
+  a{
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid;
+    color: #020202;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .page{
+    position: relative;
+    justify-content: center;
+    margin-top: 40%;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  /* animacion hover */
+  a.select:hover{
+    background-color: #129be5;
+    color: white;
+    border: 1px solid black;
+  }
